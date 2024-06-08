@@ -11,6 +11,6 @@ export const deleteNote = async (req, res) => {
     }
   } catch (e) {
     console.log("terjadi kesalahan", e);
-    return res.status(500).json({ msg: "Gagal menghapus notes" });
+    return res.status(500).json({ msg: "Note gagal dihapus" });
   }
 };

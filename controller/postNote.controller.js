@@ -11,6 +11,6 @@ export const addNote = async (req, res) => {
     return res.status(200).json({ success: true, data: result });
   } catch (e) {
     console.log("terjadi kesalahan", e);
-    return res.status(500).json({ msg: "Gagal menambahkan notes" });
+    return res.status(500).json({ msg: "Note gagal di tampilkan" });
   }
 };

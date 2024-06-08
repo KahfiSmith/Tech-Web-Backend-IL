@@ -13,6 +13,6 @@ export const updateNote = async (req, res) => {
           }
     } catch (e) {
         console.log("terjadi kesalahan", e);
-        return res.status(500).json({msg: "Gagal mengupdate notes"})
+        return res.status(500).json({msg: "Note gagal diupdate"})
     }
 }

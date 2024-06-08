@@ -6,6 +6,6 @@ export const getNote = async (req, res) => {
         return res.status(200).json({success: true, data: result});
     } catch (e) {
         console.log("terjadi kesalahan", e);
-        return res.status(500).json({msg: "Gagal manampilkan notes"})
+        return res.status(500).json({msg: "Notes gagal ditampilkan"})
     }
 }
